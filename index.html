@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head title="Emotion Identification App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+                <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body1">
+    <center>
+
+    <h3 class="btn btn-warning heading">
+        Emotion Identification App
+        <br>
+        <span>&#128512</span>
+        <span>&#128577</span>
+        <span>&#128545</span>
+        <span>&#128528</span>
+    </h3>
+
+    <p>Take your selfie, and the app will predict your emotion and give you an emoji.</p>
+    <br>
+    <b style="color: greenyellow">Are you Happy?</b>
+    <br><br>
+    <b style="color: black">Are you Sad?</b>
+    <br><br>
+    <b style="color: grey">Are you Normal?</b>
+    <br><br>
+    <b style="color: red">Are you Angry?</b>
+    <br><br>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View:</label>
+        <div id="camera"></div>
+        <button id="capturebutton" onclick="capture()" class="btn btn-success">Capture Image</button>
+    </div>
+<br>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <p>Prediction 1:</p>
+    <p class="emotion_name" id="result_name"></p>
+    <p class="emoji" id="emoji_result"></p>
+    <br><br>
+    <p>Prediciton 2:</p>
+    <p class="name_2" id="result_2"></p>
+    <p class="emoji_2" id="emoji_3"></p>
+</div>
+    
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Your Selfie:</label>
+        <div id="selfie"></div>
+        <button id="predictbutton" onclick="predict()" class="btn btn-success">Predict Emotion</button>
+    </div>
+</div>
+
+
+
+
+</center>
+<div id="footer">
+    <button>Developed By: Saketh</button>
+</div>
+<script src="main.js"></script>
+</body>
